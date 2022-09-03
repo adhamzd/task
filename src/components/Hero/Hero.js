@@ -35,7 +35,14 @@ const Hero = () => {
         </div>
         <img src={HeroImage} alt="Main Plate" />
       </div>
-      <div className={styles.circle1}></div>
+      <div
+        className={styles.circle1}
+        style={{ opacity: `${dark ? 1 : 0.3}` }}
+      ></div>
+      <div
+        className={styles.circle2}
+        style={{ opacity: `${dark ? 1 : 0.3}` }}
+      ></div>
     </div>
   );
 };

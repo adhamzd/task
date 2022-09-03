@@ -47,7 +47,7 @@ const Header = () => {
           style={{ backgroundColor: `${dark ? "white" : "black"}` }}
         >
           <BsFillBellFill />
-          <HiShoppingCart />
+          <HiShoppingCart onClick={toggleMode} />
           {dark ? (
             <MdLightMode onClick={toggleMode} />
           ) : (

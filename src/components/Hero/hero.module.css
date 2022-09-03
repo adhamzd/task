@@ -90,17 +90,29 @@
   background-image: url(../../Images/ring1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 530px;
+  height: 570px;
   width: 700px;
-  opacity: 0.3;
 }
+
+.circle2 {
+    position: absolute;
+    right: 410px;
+    top: -50px;
+    background-image: url(../../Images/ring2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 570px;
+    width: 400px;
+    transform: rotate(-12deg);
+  }
+
 
 @media screen and (max-width: 1430px) {
   .DarkLanding,
   .BrightLanding {
     min-height: auto;
   }
-  .circle1 {
+  .circle1,.circle2 {
     display: none;
   }
   .heroSection {

@@ -5,8 +5,11 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
+  z-index: 1000;
 }
-
+.header ul,.icons {
+  z-index: 1000;
+}
 .burgerMenu {
   display: none;
   color: white;
@@ -119,9 +122,6 @@
     width: 90%;
     margin-bottom: 40px;
   }
-  /* .menuDark,.menuLight {
-      display: none;
-    } */
 
   .searchIcon {
     display: none;
