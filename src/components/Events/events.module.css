@@ -1,0 +1,206 @@
+.section {
+  min-height: 100vh;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 0;
+  margin-top: 10px;
+}
+
+.more:first-of-type {
+  visibility: hidden;
+}
+
+.more {
+  background-color: black;
+  padding: 12px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.span1,
+.span2 {
+  display: block;
+  font-size: 4rem;
+  line-height: 0.4;
+}
+
+.span1 {
+  color: black;
+  font-family: "Londrina Solid", cursive;
+}
+
+.span2 {
+  color: #d00024;
+  font-family: "Sedgwick Ave", cursive;
+}
+
+.container {
+  padding: 0 20px;
+  /* width: 48%; */
+  min-width: 300px;
+}
+
+.img1,.img2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* width: 48%; */
+  min-width: 300px;
+  height: 500px;
+  border-radius: 5px;
+  border: 1px grey solid;
+  z-index: 1;
+}
+
+.img1 {
+  background-image: url("../../Images/seats.jpeg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+}
+.img2 {
+  background-image: url("../../Images/Main.jpeg");
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.back,
+.lightBack {
+  width: 100%;
+  position: relative;
+  left: 12.5%;
+  top: -250px;
+  height: 610px;
+  background-color: #d00024;
+}
+
+.back::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 150px solid #231f20;
+  border-right: 300px solid #d00024;
+  width: 0;
+}
+
+.lightBack::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 150px solid white;
+  border-right: 300px solid #d00024;
+  width: 0;
+}
+
+.lightBack::after,
+.back::after {
+  content: "";
+  position: absolute;
+  top: 57%;
+  left: 5%;
+  width: 90%;
+  z-index: 1000;
+  height: 1px;
+  background: white;
+}
+
+@media screen and (max-width: 1100px) {
+  .more {
+    font-size: 1rem;
+  }
+
+  .span1,
+  .span2 {
+    font-size: 3rem;
+  }
+
+  .sale h3 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  .images {
+    flex-direction: column;
+  }
+  .img1,.img2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .more {
+    font-size: 0.8rem;
+  }
+
+  .img1,.img2 {
+    height: 350px;
+  }
+
+  .back,
+  .lightBack {
+    left: 9%;
+  }
+
+  .header {
+    padding: 60px 0;
+  }
+
+  .span1,
+  .span2 {
+    font-size: 2rem;
+  }
+
+  .more:first-of-type {
+    display: none;
+  }
+
+  .section {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .more {
+    font-size: 0.6rem;
+  }
+
+  .span1,
+  .span2 {
+    font-size: 1.5rem;
+  }
+
+  .more:first-of-type {
+    display: none;
+  }
+
+  .section {
+    width: 85%;
+  }
+  .back::before {
+
+    border-right: 200px solid #d00024;
+  }
+  
+  .lightBack::before {
+    border-right: 200px solid #d00024;
+  }
+}

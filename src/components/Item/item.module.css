@@ -1,0 +1,43 @@
+.container {
+  padding: 0 8px;
+}
+
+.card {
+  position: relative;
+  flex-basis: 1;
+  cursor: pointer;
+}
+
+.description {
+  color: white;
+  padding: 12px;
+}
+
+.item_image {
+  display: flex;
+  align-items: center;
+  height: auto;
+  min-height: 180px;
+}
+
+.image {
+  width: 65%;
+  height: auto;
+  max-height: 180px;
+  margin: auto;
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+
+.bookmark {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 2rem;
+}

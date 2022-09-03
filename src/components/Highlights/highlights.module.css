@@ -1,0 +1,145 @@
+.section {
+  min-height: 100vh;
+  height: 100%;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0 0 0;
+}
+
+.more:first-of-type {
+  visibility: hidden;
+}
+
+.more {
+  background-color: black;
+  padding: 12px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.span1,
+.span2 {
+  display: block;
+  font-size: 4rem;
+  line-height: 0.4;
+}
+
+.span1 {
+  color: black;
+  font-family: "Londrina Solid", cursive;
+}
+
+.span2 {
+  color: #d00024;
+  font-family: "Sedgwick Ave", cursive;
+}
+
+.saleItems {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: grey;
+
+  right: -70px;
+}
+
+.sale h3 {
+  text-align: left;
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+.circles {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 15%;
+  margin: auto;
+  color: grey;
+  padding: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+  .more {
+    font-size: 1rem;
+  }
+
+  .span1,
+  .span2 {
+    font-size: 3rem;
+  }
+
+  .circles {
+    width: 30%;
+  }
+
+  .sale h3 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .more {
+    font-size: 0.8rem;
+  }
+  .circles {
+    width: 40%;
+  }
+  .span1,
+  .span2 {
+    font-size: 2rem;
+  }
+
+  .more:first-of-type {
+    display: none;
+  }
+
+  .section {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .more {
+    font-size: 0.6rem;
+  }
+  .circles {
+    width: 50%;
+  }
+
+  .span1,
+  .span2 {
+    font-size: 1.5rem;
+  }
+
+  .more:first-of-type {
+    display: none;
+  }
+
+  .section {
+    width: 85%;
+  }
+}

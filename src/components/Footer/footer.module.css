@@ -1,0 +1,131 @@
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 180px;
+  padding-bottom: 50px;
+  text-align: left;
+  margin-top: -398px;
+  box-shadow: 0px 5px 5px #888, 0px -5px 5px #888;
+}
+
+.section h3 {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  font-family: "Sedgwick Ave", cursive;
+}
+
+.center,
+.right {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.logo img {
+  width: 330px;
+}
+
+.center ul {
+  list-style-type: none;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.left {
+ width: 40%;
+}
+
+
+.left p {
+  width: 70%;
+}
+
+.socialMedia {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.socialMedia h4 {
+  font-size: 1.2rem;
+}
+
+.socialMedia div p {
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  font-size: 2rem !important;
+  cursor: pointer;
+}
+
+.right p {
+  font-size: 1.2rem;
+}
+
+.right textarea {
+  resize: none;
+  margin-top: 5px;
+  height: 100px;
+}
+
+.right textarea,
+.right input {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1240px) {
+    .section {
+        padding: 150px 50px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .section h3 {
+        font-size: 1.5rem;
+    }
+
+    .left p{
+        width: 90%;
+    }
+
+    .center ul,.right p,.socialMedia p {
+        font-size: 1rem;
+    }
+
+    .icons {
+        font-size: 1rem;
+    }
+
+    .socialMedia {
+        width: 90%;
+    }
+    .logo img {
+        width: 200px;
+      }
+}
+
+@media screen and (max-width: 770px) {
+    .logo img {
+        display: none;
+      }
+  .section {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .center,.right,.left {
+    width: 100%;
+  }
+
+  .section {
+    padding: 160px 30px 30px 30px;
+  }
+}
+
