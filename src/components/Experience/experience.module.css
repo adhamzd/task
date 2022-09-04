@@ -52,9 +52,7 @@
 .span2 {
   color: #d00024;
   font-size: 5.5rem;
-  /* margin-top: -100px; */
   font-family: "Sedgwick Ave", cursive;
-  /* margin-bottom: 30px; */
 }
 
 .images {
@@ -68,7 +66,6 @@
 .sec_image {
   background-repeat: no-repeat;
   background-size: cover;
-  /* object-fit: contain; */
   background-position: center;
   width: 20%;
   min-width: 300px;
@@ -102,82 +99,82 @@
 }
 
 @media screen and (max-width: 1300px) {
-    .span1 {
-      font-size: 5rem;
-    }
-    .span2 {
-      font-size: 4rem;
-    }
-    .main_image {
-        height: 350px;
-    }
-    .main_text p{
-        width: 80%;
-    }
-    .section {
-        padding: 5%;
-    }
+  .span1 {
+    font-size: 5rem;
   }
-
-  @media screen and (max-width: 930px) {
-    .span1 {
-      font-size: 4rem;
-    }
-    .span2 {
-      font-size: 3rem;
-    }
-    .main_image {
-        height: 350px;
-    }
-    .main_text p{
-        width: 90%;
-        font-size: 1rem;
-    }
+  .span2 {
+    font-size: 4rem;
   }
+  .main_image {
+    height: 350px;
+  }
+  .main_text p {
+    width: 80%;
+  }
+  .section {
+    padding: 5%;
+  }
+}
 
-  @media screen and (max-width: 750px) {
-.main {
+@media screen and (max-width: 930px) {
+  .span1 {
+    font-size: 4rem;
+  }
+  .span2 {
+    font-size: 3rem;
+  }
+  .main_image {
+    height: 350px;
+  }
+  .main_text p {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .main {
     flex-direction: column;
-}
-.main_image {
+  }
+  .main_image {
     width: 100%;
-}
+  }
 
-.main_text {
+  .main_text {
     width: 100%;
     margin-top: 20px;
-}
-.span1,.span2 {
+  }
+  .span1,
+  .span2 {
     text-align: center;
+  }
+  .images {
+    justify-content: center;
+  }
 }
-.images {
-  justify-content: center;
-}
+
+@media screen and (max-width: 420px) {
+  .main {
+    flex-direction: column;
+  }
+  .main_image {
+    width: 100%;
+    height: 250px;
   }
 
-  @media screen and (max-width: 420px) {
-    .main {
-        flex-direction: column;
-    }
-    .main_image {
-        width: 100%;
-        height: 250px;
-    }
-    
-    .main_text {
-        width: 100%;
-        margin-top: 20px;
-    }
+  .main_text {
+    width: 100%;
+    margin-top: 20px;
+  }
 
-    .main_text p {
-        width: 100%;
-    }
-    .span1,.span2 {
-        font-size: 3rem;
-    }
-    .sec_image {
-        min-width: 100%;
-    }
- 
-      }
-
+  .main_text p {
+    width: 100%;
+  }
+  .span1,
+  .span2 {
+    font-size: 3rem;
+  }
+  .sec_image {
+    min-width: 100%;
+  }
+}

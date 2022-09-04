@@ -106,9 +106,7 @@
   transform: rotate(-12deg);
 }
 
-
 @media screen and (max-width: 1430px) {
-
   .DarkLanding,
   .BrightLanding {
     min-height: auto;
@@ -134,7 +132,6 @@
 }
 
 @media screen and (max-width: 1290px) {
-
   .span1,
   .span2 {
     font-size: 5rem;
@@ -170,7 +167,6 @@
 }
 
 @media screen and (max-width: 1080px) {
-
   .span1,
   .span2 {
     font-size: 4rem;
@@ -184,7 +180,7 @@
     top: -150px;
   }
   .circle1 {
-  bottom: 200px;
+    bottom: 200px;
   }
 
   .dish ul {
@@ -195,14 +191,14 @@
 }
 
 @media screen and (max-width: 851px) {
-
   .span1,
   .span2 {
     font-size: 3rem;
     line-height: 1.2;
   }
 
-  .circle1,.circle2 {
+  .circle1,
+  .circle2 {
     display: none;
   }
 
