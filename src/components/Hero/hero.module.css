@@ -95,49 +95,72 @@
 }
 
 .circle2 {
-    position: absolute;
-    right: 410px;
-    top: -50px;
-    background-image: url(../../Images/ring2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 570px;
-    width: 400px;
-    transform: rotate(-12deg);
-  }
+  position: absolute;
+  right: 410px;
+  top: -50px;
+  background-image: url(../../Images/ring2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 570px;
+  width: 400px;
+  transform: rotate(-12deg);
+}
 
 
 @media screen and (max-width: 1430px) {
+
   .DarkLanding,
   .BrightLanding {
     min-height: auto;
   }
-  .circle1,.circle2 {
-    display: none;
+
+  .circle1 {
+    left: -170px;
+    height: 400px;
+    bottom: 100px;
   }
+
+  .circle2 {
+    width: 300px;
+  }
+
   .heroSection {
     padding-left: 5%;
   }
+
   .dish ul {
     background-image: linear-gradient(90deg, #d00024 88%, transparent 12%);
   }
 }
 
 @media screen and (max-width: 1290px) {
+
   .span1,
   .span2 {
     font-size: 5rem;
     line-height: 1.1;
   }
+
+  .circle1 {
+    left: -200px;
+    bottom: 150px;
+  }
+
+  .circle2 {
+    right: 120px;
+  }
+
   .price {
     font-size: 3rem;
   }
+
   .dish ul {
     font-size: 1.2rem;
     padding: 15px 20px;
     list-style-type: none;
     background-image: linear-gradient(90deg, #d00024 92%, transparent 8%);
   }
+
   .circle {
     width: 75px;
     height: 75px;
@@ -147,13 +170,23 @@
 }
 
 @media screen and (max-width: 1080px) {
+
   .span1,
   .span2 {
     font-size: 4rem;
   }
+
   .price {
     font-size: 3rem;
   }
+
+  .circle2 {
+    top: -150px;
+  }
+  .circle1 {
+  bottom: 200px;
+  }
+
   .dish ul {
     font-size: 1.2rem;
     padding: 15px 20px;
@@ -162,14 +195,21 @@
 }
 
 @media screen and (max-width: 851px) {
+
   .span1,
   .span2 {
     font-size: 3rem;
     line-height: 1.2;
   }
+
+  .circle1,.circle2 {
+    display: none;
+  }
+
   .price {
     font-size: 2rem;
   }
+
   .dish ul {
     font-size: 1rem;
     padding: 15px 20px;
@@ -185,18 +225,22 @@
     padding-left: 0;
     align-items: center;
   }
+
   .heroSection img {
     width: 100%;
     z-index: 2;
   }
+
   .span1,
   .span2 {
     padding-left: 12px;
   }
+
   .dish ul {
     width: 100%;
     background-color: #d00024;
   }
+
   .dish {
     width: 100%;
   }
@@ -209,9 +253,11 @@
     line-height: 40px;
     font-size: 2rem;
   }
+
   .price {
     font-size: 1.2rem;
   }
+
   .dish ul {
     padding: 0 5px;
   }
