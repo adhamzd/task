@@ -9,6 +9,14 @@ import dish3 from "../../Images/dish3.png";
 import dish4 from "../../Images/center.png";
 import dish5 from "../../Images/left.png";
 
+import icon1 from "../../Images/icon1.png";
+import icon2 from "../../Images/icon2.png";
+import icon3 from "../../Images/icon3.png";
+import icon4 from "../../Images/icon4.png";
+import icon5 from "../../Images/icon5.png";
+import icon6 from "../../Images/icon6.png";
+import icon7 from "../../Images/icon7.png";
+
 import { BsCircle, BsCircleFill } from "react-icons/bs";
 import Carousel from "../Carousel/Carousel";
 
@@ -75,6 +83,21 @@ const Highlights = () => {
         <BsCircleFill />
         <BsCircleFill />
       </div>
+      <img src={icon1} alt="icon" className={styles.icon1} />
+      <img src={icon2} alt="icon" className={styles.icon2} />
+      <img src={icon3} alt="icon" className={styles.icon3} />
+      <img src={icon4} alt="icon" className={styles.icon4} />
+      <img src={icon5} alt="icon" className={styles.icon5} />
+      <img src={icon6} alt="icon" className={styles.icon6} />
+      <img src={icon7} alt="icon" className={styles.icon7} />
+
+      <img src={icon1} alt="icon" className={styles.icon8} />
+      <img src={icon2} alt="icon" className={styles.icon9} />
+      <img src={icon3} alt="icon" className={styles.icon10} />
+      <img src={icon4} alt="icon" className={styles.icon11} />
+      <img src={icon5} alt="icon" className={styles.icon12} />
+      <img src={icon6} alt="icon" className={styles.icon13} />
+      <img src={icon7} alt="icon" className={styles.icon14} />
     </div>
   );
 };

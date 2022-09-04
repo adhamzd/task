@@ -1,7 +1,8 @@
 .section {
+  position: relative;
   min-height: 100vh;
   height: 100%;
-  background-color: white;
+  background-color: transparent;
   width: 80%;
   margin: auto;
 }
@@ -79,6 +80,116 @@
   margin: auto;
   color: grey;
   padding: 50px;
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5,
+.icon6,
+.icon7,
+.icon8,
+.icon9,
+.icon10,
+.icon11,
+.icon12,
+.icon13,
+.icon14 {
+  position: absolute;
+  height: auto;
+  z-index: -1;
+}
+
+.icon1 {
+  width: 150px;
+  top: 35%;
+  left: -12%;
+}
+
+.icon2 {
+  width: 80px;
+  top: 20%;
+  left: -5%;
+}
+
+.icon3 {
+  width: 80px;
+  bottom: 10%;
+  left: -13%;
+}
+
+.icon4 {
+  width: 200px;
+  top: 0;
+  left: -13%;
+}
+
+.icon5 {
+  width: 150px;
+  top: 55%;
+  left: -13%;
+}
+
+.icon6 {
+  width: 80px;
+  top: 15%;
+  left: -13%;
+}
+
+.icon7 {
+  width: 100px;
+  bottom: 0;
+  left: -8%;
+}
+
+.icon8 {
+  width: 150px;
+  bottom: 40%;
+  right: -12%;
+  transform: rotate(180deg);
+}
+
+.icon9 {
+  width: 100px;
+  bottom: 20%;
+  right: -6.5%;
+  transform: rotate(180deg);
+}
+
+.icon10 {
+  width: 80px;
+  bottom: 75%;
+  right: -12%;
+  transform: rotate(180deg);
+}
+
+.icon11 {
+  width: 200px;
+  bottom: 0;
+  right: -12%;
+  transform: rotate(180deg);
+}
+
+.icon12 {
+  width: 150px;
+  top: 30%;
+  right: -12%;
+  transform: rotate(180deg);
+}
+
+.icon13 {
+  width: 80px;
+  bottom: 10%;
+  right: -12%;
+  transform: rotate(180deg);
+}
+
+.icon14 {
+  width: 100px;
+  top: 0;
+  right: -12%;
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 1100px) {
